@@ -1,5 +1,5 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.simpleflutter">
+    package="camt.flutter.firebase">
    <application
         android:label="simpleflutter"
         android:name="${applicationName}"
