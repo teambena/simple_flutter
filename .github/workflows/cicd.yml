@@ -44,6 +44,7 @@ jobs:
           path: build/app/outputs/bundle/release/app-release.aab
   release:
     name: release to firebase distribution
+    needs: build
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
@@ -51,7 +52,7 @@ jobs:
         name: Download apk
         with:
           name: apk
-          path: build/app/outouts/apk
+          path: build/app/outputs/apk
       - name: Firebase App Distribution Action for Android
         uses: hasretsariyer/firebase-app-distribution-github-action@v1.0
         with:
